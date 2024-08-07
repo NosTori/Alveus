@@ -1,0 +1,26 @@
+0.1.6 (2024/07/29 09:45 UTC+2h)
+- cstr.h: New file only dedicated to cstring 
+- str.h: Move cstr only functions to cstr.h
+
+0.1.5 (2024/07/09 18:35 UTC+2h)
+- network.h: Add a function to connect a client socket to a listening socket via an endpoint: cutile_connect_net_socket.
+- network.h: Add a function to accept incoming connections to a listening socket: cutile_accept_net_socket.
+- network.h: Add a function to received data from sockets: cutile_receive_from_net_socket.
+- network.h: Fix errors in net_af_ipv4 and net_af_ipv6 shortcut macros.
+- network.h: Mark cutile_net_error as deprecated and progressively replace it by cutile_net_result.
+
+0.1.4 (2024/06/19 11:19 UTC+2h)
+- cutile_fill_memory_m: add the possibility to give more complex expressions in the first parameter.
+
+0.1.3 (2024/06/13 13:22 UTC+2h)
+- Fix str_insert_utf8_cp and str_push_back_utf8_cp. Both were absolutely not working ^^. Add some test cases.
+
+0.1.2 (2024/06/12 11:04 UTC+2h)
+- network.h: Fixed cutile_close_net_socket compilation on Linux. unistd.h was not included.
+
+0.1.1 (2024/06/12 08:08 UTC+2h)
+- Add a way to easily iterate through an utf8 cutile_string. (str.h: cutile_str_create_utf8_iterator, cutile_str_utf8_iterate)
+- Create PATCHNOTES
+
+0.1.0 (2024/06/06 16:09 UTC+2h)
+- Initial release
